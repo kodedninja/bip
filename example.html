@@ -1,0 +1,14 @@
+<html>
+	<head></head>
+	<body>
+		<canvas id="c" width="256" height="256"></canvas>
+		<script src="bip.js"></script>
+		<script>
+			var m = bip.fill(16, 16, {r: 255, g: 255, b: 255})
+			for(var i = 0; i < 16; i++) {
+				m[i][i] = {r:0,g:0,b:0}
+			}
+			bip(document.getElementById('c'), m)
+		</script>
+	</body>
+</html>
